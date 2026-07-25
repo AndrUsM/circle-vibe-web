@@ -5,20 +5,36 @@
     gap: 0.5rem;
     overflow: hidden;
     padding: 0.5rem;
+    height: 100%;
   }
 
-  &__section, &__header {
+  &__section,
+  &__header {
     padding: 0.5rem;
     gap: 0.5rem;
   }
 
-  &_content {
+  &__content, &__centered-form {
     padding: 0.5rem;
   }
 
   &__section {
     display: flex;
     flex-direction: column;
+  }
+
+  &__centered-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1 0 auto;
+    }
   }
 
   &__header {

@@ -1,12 +1,13 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Outlet } from 'react-router';
+import { PUBLIC_ROUTES } from './pages/public/public.routes';
+
 import './App.css';
 import './shared/styles/index.scss';
 
-const App = () => {
+const RootLayout = () => {
   return (
     <div className="app-page">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
+      <Outlet />
     </div>
   );
 };
@@ -14,8 +15,9 @@ const App = () => {
 export const ROOT_ROUTE = createBrowserRouter([
   {
     path: '/',
-    Component: App,
-  }
-])
+    Component: RootLayout,
+    children: [...PUBLIC_ROUTES],
+  },
+]);
 
 export default ROOT_ROUTE;

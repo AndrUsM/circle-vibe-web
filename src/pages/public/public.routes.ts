@@ -1,8 +1,10 @@
-import {
-  type RouteConfig,
-  route,
-} from "@react-router/dev/routes";
+import { type RouteObject } from 'react-router';
 
-export default [
-  route("/sign-in", './sign-in.tsx')
-] as RouteConfig;
+import { SignInPage } from './sign-in';
+
+export const PUBLIC_ROUTES: RouteObject[] = [
+  {
+    path: '/sign-in',
+    Component: SignInPage,
+  },
+];

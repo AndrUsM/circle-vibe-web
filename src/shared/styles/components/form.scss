@@ -1,0 +1,17 @@
+.app-form {
+  & {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &-body {
+    
+  }
+  
+  &-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: row;
+  }
+}

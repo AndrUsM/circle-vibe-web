@@ -1,0 +1,17 @@
+.app-text {
+  &-accent {
+    color: var(--primary);
+  }
+}
+
+.app-title {
+  &__emphased {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__regular {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}

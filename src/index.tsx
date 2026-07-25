@@ -2,14 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import ROOT_ROUTE from './App';
-import { RouterProvider } from 'react-router-dom';
+import { RouterProvider } from 'react-router';
 
-const rootEl = document.getElementById('root');
-if (rootEl) {
-  const root = ReactDOM.createRoot(rootEl);
+const rootDomElement = document.getElementById('root');
+
+if (rootDomElement) {
+  const root = ReactDOM.createRoot(rootDomElement);
+
   root.render(
     <React.StrictMode>
-      <RouterProvider router={ROOT_ROUTE} />
+      <RouterProvider router={ROOT_ROUTE}>
+      </RouterProvider>
     </React.StrictMode>,
   );
 }

@@ -1,2 +1,13 @@
+@import './variables/fonts.scss';
 @import './variables/variables.scss';
 @import './components';
+
+body,
+html {
+  font-family: 'Inclusive Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
+  @include paper-texture();
+}

@@ -32,6 +32,7 @@ export const SignInForm: FC = () => {
           render={({ field }) => (
             <TextField
               {...field}
+              size="small"
               label="Password"
               type="password"
               fullWidth

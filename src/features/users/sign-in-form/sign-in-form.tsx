@@ -44,7 +44,7 @@ export const SignInForm: FC = () => {
 
       <div className="app-form-actions">
         <Button type="submit" variant="contained" fullWidth>
-          Log-in
+          Sign in
         </Button>
       </div>
     </form>

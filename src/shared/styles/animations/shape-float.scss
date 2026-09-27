@@ -1,0 +1,15 @@
+@keyframes shape-float-animation {
+  0% {
+    opacity: var(--shape-min-opacity);
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    opacity: var(--shape-max-opacity);;
+  }
+
+  100% {
+    opacity: var(--shape-min-opacity);
+    transform: translate(80px, -120px) rotate(180deg);
+  }
+}

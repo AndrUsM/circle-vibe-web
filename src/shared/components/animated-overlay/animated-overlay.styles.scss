@@ -1,0 +1,50 @@
+.animated-overlay {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  filter: blur(1px) brightness(0.75);
+}
+
+.animated-overlay__shape {
+  --shape-min-opacity: 30%;
+  --shape-max-opacity: 40%;
+
+  position: absolute;
+  animation: shape-float-animation 30s ease-in-out infinite alternate;
+  background: color-mix(in srgb, var(--primary) 20%, transparent);
+  padding: 0.25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  word-break: break-word;
+  container-type: inline-size;
+
+  &::before {
+    display: block;
+    font-size: 6cqw;
+    color: var(--primary);
+    padding: 2%;
+
+    content: var(--shape-content);
+  }
+
+  &--circle {
+    border-radius: 50%;
+
+    &::before {
+      border-radius: 50%;
+    }
+  }
+
+  &--square {
+    border-radius: 1rem;
+
+    &::before {
+      border-radius: 50%;
+    }
+  }
+}

@@ -12,7 +12,7 @@ export const ErrorPage: FC = () => {
   return (
     <section className="app-page__centered-section">
       <div className="flex flex-col gap-2 text-center">
-        <h2 className="app-text-base">This page doesn’t exist</h2>
+        <h3 className="app-text-base">This page doesn’t exist</h3>
 
         <p className="text-sm">
           The link may be incorrect or the page may have been moved.

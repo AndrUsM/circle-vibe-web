@@ -23,6 +23,14 @@
     flex-direction: column;
   }
 
+  &__centered-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    backdrop-filter: blur(2px);
+  }
+
   &__centered-form {
     display: flex;
     flex-direction: column;

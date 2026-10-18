@@ -1,7 +1,9 @@
-import { createBrowserRouter, Outlet } from 'react-router';
-import { PUBLIC_ROUTES } from './pages/public/public.routes';
+import { createBrowserRouter, Navigate, Outlet } from 'react-router';
 
+import { PUBLIC_ROUTES } from './pages/public/public.routes';
+import { ErrorPage } from './pages/public/error';
 import { AnimatedOverlay } from './shared/components/animated-overlay/animated-overlay';
+
 import './App.css';
 import './shared/styles/index.scss';
 
@@ -18,7 +20,17 @@ export const ROOT_ROUTE = createBrowserRouter([
   {
     path: '/',
     Component: RootLayout,
-    children: [...PUBLIC_ROUTES],
+    children: [
+      {
+        index: true,
+        element: <Navigate to="/sign-in"  replace />
+      },
+      {
+        path: '*',
+        Component: ErrorPage,
+      },
+      ...PUBLIC_ROUTES
+    ],
   },
 ]);
 

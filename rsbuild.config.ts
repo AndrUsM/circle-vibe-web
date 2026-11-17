@@ -18,6 +18,15 @@ export default defineConfig({
       ]
     }
   },
+  resolve: {
+    alias: {
+      '@': './src',
+      '@core': './src/core',
+      '@features': './src/features',
+      '@pages': './src/pages',
+      '@shared': './src/shared'
+    }
+  },
   plugins: [
     pluginReact({
       reactCompiler: true,

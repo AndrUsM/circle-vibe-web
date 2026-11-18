@@ -1,4 +1,4 @@
-import type { AccoutStatus, UserChatStatus, UserType } from "../../enums/user";
+import type { AccoutStatus, UserChatStatus, UserType } from "../../../enums/user";
 
 export interface UserStatusesDto {
   id: number;

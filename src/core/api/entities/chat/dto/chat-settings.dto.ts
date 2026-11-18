@@ -1,4 +1,4 @@
-import type { ChatType } from "../../enums/chat";
+import type { ChatType } from "@/core/api/enums/chat";
 
 export interface ChatSettingsDto {
   isGroupChat: boolean;

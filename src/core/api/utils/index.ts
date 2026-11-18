@@ -1,1 +1,1 @@
-export { parseArrayToModels } from './parse-response.utils';
+export { parseArrayToModels, parseObjectToModel } from './parse-response.utils';
